@@ -1,39 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_Pet</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Tyler Jones</title>
 </head>
 <body>
-    <h1>Dante!</h1>
-    <div class="topnav">
-        <a class="active" href="About Me">About Me</a>
-        <a href="Favorite food">Favorite food</a>
-        <a href="Favorite Toys">Favorite Toys</a>
-      </div>
-<section class="containers">
-    <div class= "leftcontainer">
-        <div class="top">
-            <img src= images/dante.jpg>
-            <p>Dante</p>
-        </div>
-        <div class=bottom>
-                    <h1>About me:</h1>
-        <p>-Very mean</p>
-        <p>-Don't pet me</p>
-        <p>-Okay you can pet me sometimes</p>
-        <p>-Breed: Tuxedo cat</p>
-        <p>-Sex: male</p>   
-        </div>
+<header class= "navigation">
+    <div class= "inline-block" class="logo">
+        <img src="images/">
     </div>
-    <div class= "rightcontainer">
-        <img src= images/sleeping.jpg> 
-        <p>Hi, I'm Dante. I'm one mean cat with a a bad attitude. I'm a really cool guy and I don't want you to cramp my style. That means no petting. Unless you're scratching behind my ears thats okay.</p>
-  <h1 class="food"> Favorite Foods</h1>
-  <p> I love when my human feeds me. My favorite is canned tuna. I tried eating a tuna sandwich once but I didn't like the bread so i spit it out >:( I love human food but nothing beats wild animals. Cats are an invasive species. We can't control our hunting instincts so if we see something we eat it.</p>
+    <nav class= "inline-block">
+        <ul>
+            <li class="inline-block">
+                About
+            </li>
+            <li class="inline-block">
+                Skills
+            </li>
+            <li class="inline-block">
+                Work
+            </li>
+            <li class="inline-block">
+                Contact
+            </li>
+        </ul>
+    </nav>
+</header>
+<Section class="heroImg">
+    <div class="content">
+        <img src="images/Profile pic.jpg">
+        <p>A student with a degree in Psychology and a passion for Design.
+            A UX/UI Designer who is dedicated to improving everyday. Making connections
+            and learning about the people in the workspace are a large priority. With a background in illustration
+            I enjoy making visually appealing designs and innovate with creative concepts.
+            </p>
+        <button>Download Resume</button>
+    </div>
+</Section>
+<!--My Skills section has been coded using CSS-->
+<section class=mySkills>
+    <h1>Skills</h1>
+    <div class=flexContainer>
+        <div>
+            <img>
+            <h3>User Research</h3>
+            <p>Interacting and talking with the users is essential to finding ways to improve a product or design. Working one on one in interviews or creating surveys are prime ways of achieving</p>
+        </div>
+        <div>
+            <img>
+            <h3>Design and illustration</h3>
+            <p>Creating something which is visually appealing and functional is key to gaining interest</p>
+        </div>
+        <div>
+            <img>
+            <h3>Coding</h3>
+            <p>Languages: HTML, CSS, Javascript, matlab</p>
+        </div>
     </div>
 </section>
+<!-- My Work Section Constructed using CSS Grid -->
+<section class=myWork>
+    <h1>Projects</h1>
+    <div class=workGrid>
+        <div><img></div>
+        <div class=aibLinkin>
+            <h4>Aib Linkin'</h4>
+            <p>An app for all your mental health needs</p>
+            <button>View Project</button>
+        </div>
+        <div class=eliHome>
+            <h4>Eli Home Website</h4>
+            <p>Redesigning the website for the Eli home, a nonprofit organization</p>
+            <button>View Project</button>
+        </div>
+        <div class=energy>
+            <h4>Energy.gov Website</h4>
+            <p>Redesign mockup for the US Department of Energy's Website</p>
+            <button>View Project</button>
+        </div>
+    </div>
+    <h3>View All</h3>
+</section>
+<footer>
+    <ul>
+        <li class= "inline-block">
+            About
+        </li>
+        <li class= "inline-block">
+            Skills
+        </li>
+        <li class= "inline-block">
+            Work
+        </li>
+        <li class= "inline-block">
+            Contact
+        </li>
+    </ul>
+</footer>
 </body>
 </html>

@@ -1,30 +1,76 @@
-img src= images/dante.jpg{
-    width: 250px;
-    height: 350px;
-}
-.topnav{
+.inline-block{
     display: inline-block;
-    background-color: teal;
-    border-width: 2px;
-    border-color: black;
+    vertical-align: top;
+}
+.logo{
+    width: 23%;
+    padding: 1%;
     text-align: center;
-    font-size: x-large;
 }
-.bottom{
-    padding: 5px;
+nav{
+    width: 73%;
+    padding:1%;
 }
-.top{
-    background-color: #EAC753;
+ul{
+    width: 50%;
+    margin-left: auto;
 }
-.bottom{
-    background-color: blanchedalmond;
+.heroImg{
+    height: 600px;
+    padding:25px;
 }
-.leftcontainer{
-    width:29%;
-    float: left;
+.content{
+    width: 500px;
+    margin: 0 auto;
 }
-.rightcontainer{
-    width:71%;
-    background-color: #96F3EE; 
-    float: right;
+footer{
+    background-color: #373738;
+    padding:20%;
+    
+
+
 }
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+    padding:20px;
+    color:pink;
+
+}
+.content img{
+    height: 200px
+}
+.flexContainer{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    flex-direction: column;
+}
+.eliHome{
+    grid-area: eliHome;
+}
+.energy{
+    grid-area: energy;
+}
+.aibLinkin{
+    grid-area: aibLinkin;
+}
+.workGrid{
+    display: grid;
+    grid-template-areas: 'aibLinkin eliHome energy';
+    grid-template-rows: auto;
+    grid-template-columns: 33%, 33%, 33% ;
+}
+@media only screen and (max-width: 600){
+    .flexContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .workGrid{
+        display: grid;
+        grid-template-areas: 'aibLinkin eliHome energy';
+        grid-template-rows:33%, 33%, 33%;
+    }
+}
+
+
