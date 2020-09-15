@@ -46,20 +46,64 @@ footer ul{
     margin: 10px;
     flex-direction: column;
 }
+.cardContainer{
+    margin: auto;
+    padding: 10px;
+    box-shadow: #373738;
+    max-width: 300px;
+    height:50vh;
+}
 .eliHome{
     grid-area: eliHome;
+    grid-row: 1;
+}
+.eliCard{
+    background-image: url(../images/Screenshot\ \(2\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
 }
 .energy{
     grid-area: energy;
+    grid-row: 1;
+}
+.energyCard{
+    background-image: url(../images/panels.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .aibLinkin{
     grid-area: aibLinkin;
+    grid-row: 1;
+}
+.aibCard{
+    background-image: url(../images/Aib\ \ start.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.travel{
+    grid-area: travel;
+    grid-row: 1;
+}
+.travelCard{
+    background-image: url(../);
 }
 .workGrid{
     display: grid;
-    grid-template-areas: 'aibLinkin eliHome energy';
-    grid-template-rows: auto;
-    grid-template-columns: 33%, 33%, 33% ;
+    grid-template-areas: 'aibLinkin eliHome energy travel';
+    grid-template-columns: 25%, 25%, 25%, 25%;
+}
+.aibDropDownContent{
+    display: none;
+}
+.travelDropDownContent{
+    display: none;
+}
+.energyDropDownContent{
+    display: none;
+}
+.eliDropDownContent{
+    display:none;
 }
 @media only screen and (max-width: 600){
     .flexContainer{
@@ -68,8 +112,8 @@ footer ul{
     }
     .workGrid{
         display: grid;
-        grid-template-areas: 'aibLinkin eliHome energy';
-        grid-template-rows:33%, 33%, 33%;
+        grid-template-areas: 'aibLinkin eliHome energy travel';
+        grid-template-rows:25%, 25%, 25%, 25%;
     }
 }
 
